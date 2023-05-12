@@ -1,0 +1,24 @@
+Reasoning of design choices:
+
+Back End Microservices:
+--------------------------------------
+	I used NodeJs with the NestJs framework as per the outlined requirement of the test solution.
+
+	I decided to use in-memorhy storage as it would yield responses faster as well as how quick and simple it was to set up. Especially because of the general payload sizes being smaller for this application.
+
+	I also separated the resource management and server as to simulate how miroservices truly interact with one another.
+
+	Validation on the request body of the Post method are semi-manual because of the nature of the 	requirement to have the date in yyyy-MM-dd format.
+
+	I used Jest for my utilities tests as it is already integrated with NestJs.
+
+
+Front End Client:
+--------------------------------------
+	I used Javascript and React as the front end stack as per the outlined requirement of the test solution.
+
+	I used MaterialUI for React components as I haven't used it before and wanted to learn something new from the test solution. I found it really convenient and incredibly adaptable to build front end components.
+
+	I used the MUI X date pickers as a way to ensure input format for the date to be yyyy-MM-dd.
+
+	I separated the as many individual components as possible to make the code more readable and modular and to avoid any redundant code. I also separated the api calls to avoid repetition of code.

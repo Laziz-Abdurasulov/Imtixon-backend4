@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "stats-backend"
+		},
+		{
+			"path": "stats-manager"
+		},
+	],
+	"settings": {}
+}
